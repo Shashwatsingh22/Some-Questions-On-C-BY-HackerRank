@@ -1,0 +1,23 @@
+#include<stdio.h>
+main()
+{
+	int i,j,k,l,n,row,col;
+	scanf("%d",&n);
+	col=n+(n-1);
+	row=n;
+	l=n;
+	for(i=0;i<row;i++)
+	  {
+	  	for(k=1;k<(col+1)-(col-i);k++)
+	      {
+	  		 printf("%d",l);
+	  		 l=n-k;
+		  }
+	  	for(j=0;j<(col-2*i);j++)
+	  	{
+	  		printf("%d",n-i);
+	  	}
+	  	l=n;	
+		printf("\n");
+	  }
+}
